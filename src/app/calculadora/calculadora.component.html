@@ -1,0 +1,39 @@
+<table>
+    <tr>
+        <td colspan="4" class="headCalculadora">
+            <div style="text-align:center">
+                <h1>{{ titulo }}</h1>
+            </div>
+        </td>
+        <td rowspan="4" class="resultCalculadora">
+            <div style="text-align:center">
+                <h1>Resultado</h1><br>
+                <h1>{{ resultado }}</h1>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" class="inputCalculadora1">
+            <div class="form-group">
+                <label for="operandoA">OperandoA:</label>
+                <input type="number" class="form-control" id="operandoA" name="operandoA"
+                    placeholder="Escribe operando A" [(ngModel)]="operandoA" />
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" class="inputCalculadora2">
+            <div class="form-group">
+                <label for="operandoB">OperandoB:</label>
+                <input type="number" class="form-control" id="operandoB" name="operandoB"
+                    placeholder="Escribe operando B" [(ngModel)]="operandoB" />
+            </div>
+        </td>
+    </tr>
+    <tr class="rowButtons">
+        <td class="btnCalculadora"><button class="btn btn-primary" (click)="onSumar()">+</button></td>
+        <td class="btnCalculadora"><button class="btn btn-primary" (click)="onRestar()">-</button></td>
+        <td class="btnCalculadora"><button class="btn btn-primary" (click)="onDividir()">/</button></td>
+        <td class="btnCalculadora"><button class="btn btn-primary" (click)="onMultiplicar()">*</button></td>
+    </tr>
+</table>

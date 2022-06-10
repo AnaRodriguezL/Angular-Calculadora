@@ -1,0 +1,33 @@
+table,
+td.headCalculadora {
+  border: 1px solid black;
+  margin: 50px auto;
+}
+
+button {
+  width: 70% !important;
+}
+
+.headCalculadora {
+  padding: 20px;
+}
+
+.resultCalculadora {
+  padding: 50px;
+}
+
+.inputCalculadora1 {
+  padding: 20px;
+}
+
+.inputCalculadora2 {
+  padding: 20px;
+}
+
+.rowButtons {
+  text-align: center;
+}
+
+.btnCalculadora {
+  padding: 20px 5px;
+}
